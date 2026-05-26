@@ -1,0 +1,6 @@
+{
+  "name": "Founder-Being",
+  "description": "A founder wellbeing & clarity community helping entrepreneurs reconnect with calmness, clarity, emotional balance, and conscious leadership.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
