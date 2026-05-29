@@ -66,7 +66,7 @@ export default function MoonPhase() {
   }, [currentTime]);
 
   return (
-    <div className="flex items-center gap-3 backdrop-blur-md bg-stone-100/10 dark:bg-white/5 py-1.5 px-3 rounded-full border border-stone-200/20 dark:border-stone-800/40 text-stone-700 dark:text-stone-300 hover:border-stone-300 dark:hover:border-stone-700/60 transition-all duration-300 text-xs font-mono">
+    <div className="flex items-center gap-3 backdrop-blur-md bg-stone-100/10 dark:bg-white/5 py-1.5 px-3 rounded-full border border-stone-250 dark:border-stone-800/40 text-stone-850 dark:text-stone-300 hover:border-stone-350 dark:hover:border-stone-700/60 transition-all duration-300 text-xs font-mono">
       <div className="relative w-4 h-4 flex items-center justify-center">
         {/* Animated minimal moon phase SVG indicator */}
         <svg viewBox="0 0 24 24" className="w-4 h-4 text-amber-500/80 dark:text-amber-100 fill-current drop-shadow-[0_0_10px_rgba(253,224,71,0.2)]">
@@ -77,18 +77,18 @@ export default function MoonPhase() {
       </div>
 
       <div className="flex flex-col md:flex-row md:items-center gap-1 leading-none">
-        <span className="text-[10px] text-stone-900 dark:text-stone-200">
+        <span className="text-[10px] text-stone-900 dark:text-stone-200 font-medium">
           {moon.phaseName}
         </span>
-        <span className="hidden md:inline text-[9px] text-stone-400 dark:text-stone-500">
+        <span className="hidden md:inline text-[9px] text-stone-600 dark:text-stone-450">
           • {moon.illumination}% lit
         </span>
         {moon.daysToFullMoon > 0 ? (
-          <span className="text-[9px] text-amber-800/80 dark:text-amber-400/80 font-medium">
+          <span className="text-[9px] text-amber-800 dark:text-amber-400/85 font-medium">
             ({moon.daysToFullMoon}d to Full Moon)
           </span>
         ) : (
-          <span className="text-[9px] text-emerald-600 dark:text-emerald-400 font-medium font-sans">
+          <span className="text-[9px] text-emerald-700 dark:text-emerald-400 font-medium font-sans">
             (Gathering Phase)
           </span>
         )}

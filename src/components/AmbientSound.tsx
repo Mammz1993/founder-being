@@ -182,22 +182,22 @@ export default function AmbientSound() {
   };
 
   return (
-    <div className="flex items-center gap-3 backdrop-blur-md bg-stone-900/10 dark:bg-white/5 py-1.5 px-3 rounded-full border border-stone-200/20 dark:border-stone-800/40 text-stone-700 dark:text-stone-300 transition-all duration-300">
+    <div className="flex items-center gap-3 backdrop-blur-md bg-stone-900/10 dark:bg-white/5 py-1.5 px-3 rounded-full border border-stone-250 dark:border-stone-800/40 text-stone-750 dark:text-stone-300 transition-all duration-300">
       <button
         onClick={handleToggle}
-        className="flex items-center gap-1.5 cursor-pointer text-xs font-mono select-none tracking-tight py-0.5 hover:text-stone-900 dark:hover:text-white transition-colors"
+        className="flex items-center gap-1.5 cursor-pointer text-xs font-mono select-none tracking-tight py-0.5 hover:text-stone-950 dark:hover:text-white transition-colors font-medium"
         id="toggle-ambient-sound"
         title={isPlaying ? "Mute Ocean Audio" : "Play Wave Synth"}
       >
         {isPlaying ? (
           <>
-            <Volume2 className="w-3.5 h-3.5 text-stone-950 dark:text-stone-100 animate-pulse" />
-            <span className="text-[10px] text-stone-500 dark:text-stone-400">Waves Active</span>
+            <Volume2 className="w-3.5 h-3.5 text-stone-955 dark:text-stone-100 animate-pulse" />
+            <span className="text-[10px] text-stone-750 dark:text-stone-300">Waves Active</span>
           </>
         ) : (
           <>
-            <VolumeX className="w-3.5 h-3.5 text-stone-400 dark:text-stone-500" />
-            <span className="text-[10px] text-stone-400 dark:text-stone-500">Muted Ambient</span>
+            <VolumeX className="w-3.5 h-3.5 text-stone-550 dark:text-stone-450" />
+            <span className="text-[10px] text-stone-550 dark:text-stone-450">Muted Ambient</span>
           </>
         )}
       </button>
